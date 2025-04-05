@@ -1,0 +1,13 @@
+.game-logo {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pawns {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=images.css.map */

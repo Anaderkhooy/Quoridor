@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/images.css">
+  <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/text.css">
+  <link rel="stylesheet" href="styles/barriers.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="game-controller">
+    <img src="images/icons8-logo.svg" class="game-logo">
+    <p class="title">Quoridor</p>
+    <p class="turn-title js-turn-title"></p>
+    <div class="walls-container">
+      <p class="blue js-blue-walls"></p>
+      <p class="yellow js-yellow-walls"></p>
+    </div>
+    <p class="winner js-winner"></p>
+  </div>
+  <div class="game-container">
+    <div class="table-container js-table-container"></div>
+  </div>
+  <script src="./scripts/game.js" type="module"></script>
+</body>
+
+</html>

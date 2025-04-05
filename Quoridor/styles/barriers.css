@@ -1,0 +1,49 @@
+.h-barriers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.v-barrier {
+  width: 5px;
+  height: 42px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgb(175, 172, 146);
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.h-barrier {
+  width: 42px;
+  height: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgb(175, 172, 146);
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.hover-yellow {
+  background-color: rgb(0, 166, 166);
+}
+
+.hover-blue {
+  background-color: rgb(253, 107, 180);
+}
+
+.barrier-yellow {
+  background-color: rgb(24, 85, 253);
+}
+
+.barrier-blue {
+  background-color: rgb(247, 16, 155);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.default-cursor {
+  cursor: default;
+}/*# sourceMappingURL=barriers.css.map */

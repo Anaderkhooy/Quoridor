@@ -1,0 +1,44 @@
+@import 'colors';
+
+@mixin dimension($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+
+.table-container {
+  @include dimension(540px, 500px, 10px);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: $table-background-color;
+  box-shadow: 0 0 30px $table-shadow;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.circles {
+  @include dimension(8px, 5px, 3px);
+  background-color: $circles-background-color;
+  box-shadow: 0 0 4px $circles-shadow;
+  cursor: pointer;
+  &:active {
+    transform: scale(1.2);
+  }
+}
+
+.default-cursor {
+  cursor: default;
+}
+
+.cells-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+}
+
+.cells {
+  @include dimension(43px, 43px, 5px);
+  background-color: $cells-background-color;
+  box-shadow: 0 0 12px $cells-shadow;
+}

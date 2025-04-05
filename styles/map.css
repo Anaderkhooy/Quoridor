@@ -1,0 +1,42 @@
+.table-container {
+  width: 540px;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  box-shadow: 0 0 30px rgb(91, 103, 237);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.circles {
+  width: 8px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: rgb(21, 21, 87);
+  box-shadow: 0 0 4px rgb(238, 236, 236);
+  cursor: pointer;
+}
+.circles:active {
+  transform: scale(1.2);
+}
+
+.default-cursor {
+  cursor: default;
+}
+
+.cells-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+}
+
+.cells {
+  width: 43px;
+  height: 43px;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: 0 0 12px rgb(17, 0, 255);
+}/*# sourceMappingURL=map.css.map */

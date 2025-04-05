@@ -1,0 +1,12 @@
+@mixin image($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+}
+.game-logo {
+  @include image(150px, 150px);
+}
+
+.pawns {
+  @include image(40px, 40px);
+}

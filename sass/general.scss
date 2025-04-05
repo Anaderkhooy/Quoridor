@@ -1,0 +1,91 @@
+@import 'colors';
+
+@mixin flex($justify-direction, $align, $flex-direction) {
+  display: flex;
+  justify-content: $justify-direction;
+  align-items: $align;
+  flex-direction: $flex-direction;
+}
+
+body {
+  @include flex(center, center, row);
+  background-image: linear-gradient($top-linear-gradient-color, $bottom-linear-gradient-color);
+  background-size: 100% 105%;
+}
+
+.walls-container {
+  width: 250px;
+  @include flex(space-between, center, row);
+}
+
+.game-controller {
+  width: 400px;
+  @include flex(center, center, column);
+  margin-right: 100px;
+}
+
+.game-container {
+  @include flex(center, center, row);
+  width: 700px;
+  height: 670px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+  .turn-title {
+    font-size: 20px;
+  }
+  .walls-container {
+    flex-direction: column;
+  }
+  .game-container {
+    width: 500px;
+    height: 500px;
+  }
+  .game-controller {
+    flex-direction: row;
+    width: 500px;
+    margin: 0;
+  }
+  .table-container {
+    width: 380px;
+    height: 350px;
+    padding: 5px;
+  }
+  .cells {
+    width: 25px;
+    height: 25px;
+  }
+  .circles {
+    width: 5px;
+    height: 3px;
+  }
+  .v-barrier {
+    height: 25px;
+  }
+  .h-barrier {
+    width: 25px;
+  }
+  .pawns {
+    width: 25px;
+    height: 25px;
+  }
+  .title {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .winner {
+    font-size: 10px;
+  }
+  .blue ,
+  .yellow {
+    font-size: 12px;
+  }
+  .game-logo {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+  }
+}

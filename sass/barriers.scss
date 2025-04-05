@@ -1,0 +1,50 @@
+@import 'colors';
+
+@mixin showBarrier($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 3px;
+  box-shadow: 0 0 4px $barriers-box-shadow;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.h-barriers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.v-barrier {
+  @include showBarrier(5px, 42px);
+}
+
+.h-barrier {
+  @include showBarrier(42px, 5px);
+}
+
+.hover-yellow {
+  background-color: $hover-yellow-background;
+}
+
+.hover-blue {
+  background-color: $hover-blue-background;
+}
+
+.barrier-yellow {
+  background-color: $barrier-yellow-background;
+}
+
+.barrier-blue {
+  background-color: $barrier-blue-background;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.default-cursor {
+  cursor: default;
+}
